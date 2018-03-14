@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Puppington Post</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+</head>
+<body>
+<header>
+  <div class="nav-bar">
+     <div id="navbar" class="bg-dark">
+       <div class="container">
+          <div class="container">
+            <div class="nav-bar text-center">
+                   <a class="text-light text-center mr-5 text-uppercase" href="/AllNews.html"> All News</a>
+                   <a class="text-light text-center mr-5 text-uppercase" href="/Weather.html" data-pb-field="custom.menuItemText_2"> Weather</a>
+                   <a class="text-light text-center mr-5 text-uppercase" href="/Health.html" data-pb-field="custom.menuItemText_3"> Health</a>
+                   <a class="text-light text-center mr-5 text-uppercase" href="/Food.html" data-pb-field="custom.menuItemText_4"> Food</a>
+
+
+                <!-- <a class="text-light text-center" href="/opinion" data-pb-field="custom.menuItemText_5"> OPINION</a> -->
+                 <!-- <li class="links spaced spaced-right spaced-left spaced-sm">
+                   <a class="text-color-light mobile app-bar-text" href="http://placeanad.latimes.com/" data-pb-field="custom.menuItemText_6" data-pb-url-field="custom.menuItemUrl_6" data-pb-field-type="text" data-pb-placeholder="#">PLACE AN AD</a> </li> -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+<header class="container">
+  <div class="card-content bg-white border" style= "height: 120px">
+      <h1 class="display-4 text-center newspaperfont pt-1"></i> The Puppington Post</h1>
+      <p><em>Powered by News API, The New York Times, and OpenWeatherMap</em></p>
+  </div>
+
+<div class="container" style= "height: 50px">
+
+</header>
+<header class="container">
+    <div class="row bg-white">
+      <div class="col-3 border">
+        <h3 class="text-center newspaperfont"> World News </h3>
+        <div class="container border-bottom mt-4">
+          <!-- First News Article -->
+          <a class="text-left articletitle" href="#" id="toptitle1"> </a>
+          <p class="byline" id="byline1"> </p>
+          <p style="font-size:90%" id="articlesummary1"> </p>
+
+
+       </div>
+
+       <div class="container border-bottom mt-3">
+         <!-- Second News Article -->
+         <a class="text-left articletitle" href="#" id="toptitle2"> </a>
+         <p class="byline" id="byline2"> </p>
+         <p style="font-size:90%" id="articlesummary2"> </p>
+
+
+      </div>
+
+      <div class="container border-bottom mt-3">
+        <!-- Third News Article -->
+        <a class="text-left articletitle" href="#" id="toptitle3"> </a>
+        <p class="byline" id="byline3"> </p>
+        <p style="font-size:90%" id="articlesummary3"> </p>
+
+
+     </div>
+
+     <div class="container border-bottom mt-3">
+       <!-- Fourth News Article -->
+       <a class="text-left articletitle" href="#" id="toptitle4"> </a>
+       <p class="byline" id="byline4"> </p>
+       <p style="font-size:90%" id="articlesummary4"> </p>
+
+
+    </div>
+
+     </div>
+      <div class="col-5 border">
+        <h3 class="text-center newspaperfont"> Sports </h3>
+        <div class="container border-bottom mt-4">
+          <!-- First Sports Article -->
+          <img class="img-fluid mb-4" id="sportspic1" src="#" >
+          <a class="text-left articletitle" href="#" id="sports1"> </a>
+          <p class="byline" id="sportsby1"> </p>
+          <p style="font-size:90%" id="sportssummary1"> </p>
+
+       </div>
+
+       <div class="container border-bottom mt-4">
+         <!-- Second Sports Article -->
+         <img class="img-fluid mb-4" id="sportspic2" src="#" >
+         <a class="text-left articletitle" href="#" id="sports2"> </a>
+         <p class="byline" id="sportsby2"> </p>
+         <p style="font-size:90%" id="sportssummary2"> </p>
+
+      </div>
+
+      <div class="container border-bottom mt-4">
+        <!-- Third Sports Article -->
+        <img class="img-fluid mb-4" id="sportspic3" src="#" >
+        <a class="text-left articletitle" href="#" id="sports3"> </a>
+        <p class="byline" id="sportsby3"> </p>
+        <p style="font-size:90%" id="sportssummary3"> </p>
+
+     </div>
+        </div>
+
+      <div class="col-sm border">
+
+        <div class="container border-bottom">
+          <h3 class="text-center newspaperfont"> Weather Forecast </h3>
+              <div class="row">
+                <a id="get_forecast" href="#" class="btn btn-primary mx-auto">Get Your 3-Day Forecast</a>
+              </div>
+              <a class="text-light weather-text"> </a>
+              <div class="container">
+                <div class="row mt-1">
+                  <div class="col-sm">
+                    <img class="img-fluid" id="iconpic1" src="white_box.jpg">
+                    <h4 class="text-center" id="temp1"> </h4>
+                    <h5 class="text-center" id="weathercond1"> </h5>
+                    <a class="text-center" id="time1"> </a>
+                  </div>
+                  <div class="col-sm">
+                    <img class="img-fluid" id="iconpic2" src="white_box.jpg" >
+                    <h4 class="text-center" id="temp2"> </h4>
+                    <h5 class="text-center" id="weathercond2"> </h5>
+                    <a class="text-center" id="time2"> </a>
+                  </div>
+                  <div class="col-sm">
+                    <img class="img-fluid" id="iconpic3" src="white_box.jpg" >
+                    <h4 class="text-center" id="temp3"> </h4>
+                    <h5 class="text-center" id="weathercond3"> </h5>
+                    <a class="text-center" id="time3"> </a>
+                </div>
+              </div>
+              </span>
+              </div>
+            <h5 class="text-center mt-5" id="weather-location"> </h5>
+          </div>
+        <div class="">
+          <h3 class="text-center newspaperfont"> US Headlines </h3>
+          <div class="container border-bottom mt-4">
+            <!-- First Top US Article -->
+            <img class="img-fluid mb-4" id="uspic1" src="#" >
+            <a class="text-left articletitle" href="#" id="ustop1"> </a>
+            <p class="byline" id="usby1"> </p>
+            <p style="font-size:90%" id="ustoparticle1"> </p>
+
+         </div>
+
+         <div class="container border-bottom mt-4">
+           <!-- Second Top US Article -->
+           <img class="img-fluid mb-4" id="uspic2" src="#" >
+           <a class="text-left articletitle" href="#" id="ustop2"> </a>
+           <p class="byline" id="usby2"> </p>
+           <p style="font-size:90%" id="ustoparticle2"> </p>
+
+        </div>
+
+        <div class="container border-bottom mt-4">
+          <!-- Third Sports Article -->
+          <img class="img-fluid mb-4" id="uspic3" src="#" >
+          <a class="text-left articletitle" href="#" id="ustop3"> </a>
+          <p class="byline" id="usby3"> </p>
+          <p style="font-size:90%" id="ustoparticle3"> </p>
+
+       </div>
+
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </div>
+
+      <!--  Our JS code will insert HTML here -->
+    </div>
+    </div>
+
+</header>
+
+  <script src="newspaper.js"></script>
+
+</body>
+</html>

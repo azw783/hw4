@@ -1,0 +1,26 @@
+.newspaperfont {
+  font-family: 'Lobster', cursive;
+}
+
+body {
+  background-color: #f0f0f0
+}
+
+.byline {
+  font-size: 14px
+}
+
+.articletitle{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: justify;
+  line-height: 0.8;
+}
+
+li {
+  line-height: 1.2;}
+
+a:link { color: #000000; text-decoration: none}
+a:visited { color: #000000; text-decoration: none}
+a:hover { color: #3366CC; text-decoration: underline}
+a:active { color: #000000; text-decoration: none}
